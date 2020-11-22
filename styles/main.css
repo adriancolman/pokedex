@@ -1,0 +1,173 @@
+
+
+body{
+    background: url("https://images3.alphacoders.com/273/thumb-1920-273289.jpg");
+    font-family: 'Sigmar One', cursive;
+
+}
+
+.container-nav{
+    
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    max-width: 200px;
+    max-height: 110px;
+}
+
+
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.nav-links{
+    width: 75%;
+    
+}
+
+.nav-links>.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-nav{
+    display: inline;
+    
+    
+}
+
+.link-nav>a{
+    color: #fafafa;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: #ff1bc8;
+    text-decoration: none;
+    list-style: none;
+}
+
+.link-nav>a:hover{
+    background-color: #fafafa;
+    color:#ff1bc8;
+}
+
+.container-header{
+    margin: 10px 40px;
+    background: transparent;
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+    text-transform: none;
+    text-shadow: #313131;
+    color: #fafafa;
+}
+
+.header-title{
+    
+    font-size: 2.5rem;
+}
+
+.container-gallery{
+    margin: 0 10px;
+    background: #fafafa;
+    padding: 10px;
+    color: #00bbe3;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.poke-card{
+    width: 23%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: solid 1px #00bbe3;
+
+}
+
+.poke-img{
+    width: 100%;
+    height: auto;
+    background-color: #b9a89a;
+
+}
+
+.poke-name{
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.poke-name:hover{
+    background-color: #00bbe3;
+    color: #fafafa;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC702;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #0f0f0f;
+}
+
+hr{
+    margin: 60px;
+    border: 1px solid;
+}
+
+.footer-links-container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100px;
+    flex-wrap: wrap;
+}
+
+.footer-link{
+    text-decoration: none;
+    opacity: .8;
+    color: #212121;
+    padding: 10px;
+}
+
+/*--------------------------mediaqueries-----------------------------------------*/
+
+@media screen and (max-width: 900px){
+    .poke-card{
+        width: 47%;
+        
+    }
+    .poke-name{
+        font-size: 1rem;
+    }
+    .poke-type{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container-nav{
+        flex-direction: column;
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .link-nav{
+        margin: 5px;
+    }
+    .link-nav > a{
+        font-size: 1rem;
+        padding: 0px;
+    }
+}
